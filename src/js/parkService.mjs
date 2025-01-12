@@ -1,3 +1,20 @@
+export function getParkData() {
+  return {
+    fullName: "Yellowstone National Park",
+    url: "https://www.nps.gov/yell/index.htm",
+    images: [
+      { url: "https://example.com/image.jpg", altText: "Yellowstone scenery" }
+    ],
+    designation: "National Park",
+    states: "Wyoming, Montana, Idaho",
+    description: "Yellowstone National Park is known for its wildlife and geothermal features.",
+    contacts: {
+      phoneNumbers: [{ phoneNumber: "123-456-7890" }],
+      emailAddresses: [{ emailAddress: "info@yellowstone.com" }]
+    }
+  };
+}
+
 // Update the link in the disclaimer area
 const disclaimer = document.querySelector(".disclaimer > a");
 disclaimer.href = parkData.url;
